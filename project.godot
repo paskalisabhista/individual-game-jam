@@ -14,6 +14,10 @@ config/name="IndividualGameJam"
 run/main_scene="res://scenes/world/World.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="2d"
+
 [global]
 
 camera=false

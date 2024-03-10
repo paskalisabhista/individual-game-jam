@@ -16,4 +16,3 @@ frame = 1
 
 [node name="Position2D" type="Position2D" parent="Sprite"]
 rotation = 0.00174533
-scale = Vector2( 1, 1 )
