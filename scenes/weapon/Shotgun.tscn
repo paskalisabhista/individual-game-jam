@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/weapons/weaponR3.png" type="Texture" id=1]
+[ext_resource path="res://scenes/weapon/Shotgun.gd" type="Script" id=2]
+[ext_resource path="res://assets/environment/muzzle.png" type="Texture" id=3]
+[ext_resource path="res://assets/weapons/shotgun_shot.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/weapons/shotgun_clip.wav" type="AudioStream" id=5]
+
+[node name="Shotgun" type="KinematicBody2D" groups=["gun"]]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 2 )
+damage = 14
+ammo = 6
+max_ammo = 24
+reload_time_sec = 0.4
+
+[node name="Control" type="Control" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Control"]
+position = Vector2( 0, 6 )
+texture = ExtResource( 1 )
+vframes = 2
+frame = 1
+
+[node name="BulletPoint" type="Node2D" parent="."]
+position = Vector2( 48, -9 )
+
+[node name="BulletPoint2" type="Node2D" parent="."]
+position = Vector2( 48, 0 )
+
+[node name="BulletPoint3" type="Node2D" parent="."]
+position = Vector2( 48, 9 )
+
+[node name="Muzzle" type="Sprite" parent="."]
+visible = false
+position = Vector2( 58, 1.69407e-21 )
+scale = Vector2( 0.238281, 0.210938 )
+texture = ExtResource( 3 )
+
+[node name="sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+
+[node name="reload_sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/rifle_reload.wav-f097ad6a2725479f6d61b2f5ff360eb6.sample"
+
+[deps]
+
+source_file="res://assets/weapons/rifle_reload.wav"
+dest_files=[ "res://.import/rifle_reload.wav-f097ad6a2725479f6d61b2f5ff360eb6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
