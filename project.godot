@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="IndividualGameJam"
+config/name="Alien Shooter"
 run/main_scene="res://scenes/world/ui/Menu.tscn"
 config/icon="res://icon.png"
 
